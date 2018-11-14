@@ -1,5 +1,4 @@
 (async () => {
-  const uuid = require('uuid-random')
   const csv = require('csvtojson')
   const { readdir } = require('fs').promises
   const saveFile = require('./lib/save-file')
@@ -36,7 +35,7 @@
         logger('info', ['index', fileName])
         const recipient = phonenumbers.pop()
         const data = generateJob(recipient)
-        const filePath = `${JOBS_DIRECTORY_PATH}/${uuid()}.json`
+        const filePath = `${JOBS_DIRECTORY_PATH}/${data._id}.json`
         await saveFile({ filePath: filePath, data: data })
         await next()
       } else {
