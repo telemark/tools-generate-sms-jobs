@@ -1,0 +1,54 @@
+{
+  "name": "tools-generate-sms-jobs",
+  "version": "1.0.0",
+  "description": "Generates job for sms from ids",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && npm audit && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "start": "node index.js",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
+  },
+  "keywords": [
+    "tfk",
+    "Telemark fylkeskommune",
+    "sms"
+  ],
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telemark/tools-generate-sms-jobs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/tools-generate-sms-jobs/issues"
+  },
+  "homepage": "https://github.com/telemark/tools-generate-sms-jobs#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "csvtojson": "2.0.8",
+    "dotenv": "6.1.0",
+    "jsonwebtoken": "8.3.0",
+    "uuid-random": "1.0.6"
+  },
+  "devDependencies": {
+    "ava": "0.25.0",
+    "coveralls": "3.0.2",
+    "husky": "1.1.4",
+    "nyc": "13.1.0",
+    "standard": "12.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
+}
