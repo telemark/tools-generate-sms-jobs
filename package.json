@@ -1,6 +1,6 @@
 {
   "name": "tools-generate-sms-jobs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Generates job for sms from ids",
   "private": true,
   "license": "MIT",
