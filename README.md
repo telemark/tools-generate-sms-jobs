@@ -1,6 +1,6 @@
 # tools-generate-sms-jobs
 
-Generates job for sms from ids
+Generates job for sms from a csv-file with personalid numbers.
 
 # Setup
 
@@ -18,11 +18,19 @@ JOBS_DIRECTORY_PATH=test/directories/jobs
 QUEUE_DIRECTORY_PATH=test/directories/jobs
 ```
 
-
-
 # Usage
 
+Add a csv-file to the `queue` directory.
 
+The column for personalid number must have the header `fnr`
+
+Run the function
+
+```
+$ npm start
+````
+
+This will generate jobs in the `jobs`directory. Handle the jobs with `robot-post-payload` or similar
 
 # Related
 
