@@ -34,7 +34,7 @@ This will generate jobs in the `jobs`directory. Handle the jobs with `robot-post
 
 # Related
 
-- [robot-post-payload] (https://github.com/telemark/robot-post-payload) - robot for distributing messages
+- [robot-post-payload](https://github.com/telemark/robot-post-payload) - robot for distributing messages
 - [micro-kor](https://github.com/telemark/micro-kor) - microservice for kontakt- og reservasjonsregisteret
 - [micro-sms](https://github.com/telemark/micro-sms) - microservice for sending sms
 
