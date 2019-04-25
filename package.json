@@ -37,7 +37,7 @@
     "csvtojson": "2.0.8",
     "dotenv": "7.0.0",
     "jsonwebtoken": "8.5.1",
-    "uuid-random": "1.0.7"
+    "uuid-random": "1.0.8"
   },
   "devDependencies": {
     "ava": "1.4.1",
