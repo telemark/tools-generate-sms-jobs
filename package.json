@@ -40,7 +40,7 @@
     "uuid-random": "1.0.9"
   },
   "devDependencies": {
-    "ava": "3.5.0",
+    "ava": "3.13.0",
     "coveralls": "3.0.9",
     "husky": "4.2.3",
     "nyc": "15.0.0",
