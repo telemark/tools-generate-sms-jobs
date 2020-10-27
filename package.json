@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/telemark/tools-generate-sms-jobs#readme",
   "dependencies": {
-    "axios": "0.19.0",
+    "axios": "0.21.0",
     "csvtojson": "2.0.10",
     "dotenv": "8.0.0",
     "jsonwebtoken": "8.5.1",
